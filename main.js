@@ -47,8 +47,8 @@ window.addEventListener('load', () => {
     addToBody('Состояние текущей записи: ' + JSON.stringify(history.state));
 
     addToBody('Время загрузки страницы: ' + performance.now() + ' мс');
-    addToBody('Использование памяти (если поддерживается): ' + JSON.stringify(performance.memory));
-    addToBody('Записи о производительности: ' + JSON.stringify(performance.getEntries()));
+    // addToBody('Использование памяти (если поддерживается): ' + JSON.stringify(performance.memory));
+    // addToBody('Записи о производительности: ' + JSON.stringify(performance.getEntries()));
 
     navigator.getBattery().then((battery) => {
         addToBody('Уровень заряда: ' + (battery.level * 100) + '%');
